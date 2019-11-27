@@ -1,0 +1,16 @@
+<ul class="list-group" >
+      
+        <li *ngFor="let p of lesprod" class="list-group-item list-group-item-dark" style="width: 300px; height: 300px;"  >
+            <img src=".\assets\shirt.jpg"class="rounded mx-auto d-block">
+            <span class="badge badge-pill badge-info">{{p.id}}</span>
+            <span class="badge badge-pill badge-info">{{p.libb}}</span>
+            <span class="badge badge-pill badge-info">{{p.prix}}</span>
+            <span class="badge badge-pill badge-info">{{statu()}}</span>
+            <span class="badge badge-pill badge-info">{{p.type}}</span>
+            <span class="badge badge-pill badge-info">{{p.taille}}</span>
+            <br>
+            <span class="badge badge-pill badge-info">{{p.datf|date:'yyyy-MM-dd'}}</span>
+
+            </li>
+      
+      </ul>
