@@ -1,5 +1,5 @@
 export class Monp {
-    constructor(private _id:string, private  _libb: string,private _imge:any,private  _prix:number,private _remise:boolean,private _datf:Date,private _type:string,private _taille:string)  {
+    constructor(private _id:string, private  _libb: string,private _imge:any,private  _prix:number,private _remise:boolean,private _datf:Date,private _taille:string)  {
     }
     public get id(): string {
     return this._id;
@@ -25,7 +25,7 @@ export class Monp {
                 public set prix(value: number) {
                 this._prix = value;
                 }
-                public get remsie(): boolean {
+                public get remise(): boolean {
                     return this._remise;
                     }
                     public set remise(value: boolean) {
@@ -38,13 +38,7 @@ export class Monp {
                         this._datf = value;
 
                         }
-                        public get type(): string {
-                            return this._type;
-                            }
-                            public set type(value: string) {
-                            this._type= value;
-                            
-                            }
+                    
                     
                    
     public get taille(): string {

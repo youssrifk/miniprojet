@@ -7,13 +7,13 @@
   <div class="collapse navbar-collapse" id="navbarColor02">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#" routerLinkActive="active" [routerLink]="['/home']">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a a [routerLink]="['/ajouter produit']" class="nav-link" href="#">ajout produit</a>
+        <a  routerLinkActive="active" [routerLink]="['/ajouter produit']" class="nav-link" href="#">ajout produit</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/produit']" href="#">nos produit</a>
+        <a class="nav-link"  routerLinkActive="active" [routerLink]="['/produit']" href="#">nos produit</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">remise</a>
@@ -24,4 +24,9 @@
       <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
     </form>
   </div>
+  
 </nav>
+
+
+
+

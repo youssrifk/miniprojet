@@ -1,16 +1,73 @@
-<ul class="list-group" >
+<div class="cantainer pos">
+        <div class="row" >
+        <ng-container *ngFor="let t of lesprod">
+   
+        
+       
+            <div class="hovereffect col-sm-2 col-xs-6"  *ngIf="t._id.charAt(0)=='s'">
+                <img class="img-responsive"  [src]="t._imge">
+                <div class="overlay">
+                   <h2>SHIRT</h2>
+                   
+                   <span class="badge badge-pill badge-primary">{{t._id}}</span>
+                            <span class="badge badge-pill badge-primary">{{t._libb}}</span>
+                            <span class="badge badge-pill badge-primary">{{t._prix}}DTN</span><br>
+                            <span class="badge badge-pill badge-primary">RM:{{statu(t._remise)}}</span>
+                         
+                            <span class="badge badge-pill badge-primary">{{t.taille}}</span>
+                            <br>
+                            <span class="badge badge-pill badge-primary">{{t._datf|date:'yyyy-MM-dd'}}</span>
+                </div>
+    </div>
+</ng-container>
+          </div>
+        
+       <br>
+    
       
-        <li *ngFor="let p of lesprod" class="list-group-item list-group-item-dark" style="width: 300px; height: 300px;"  >
-            <img src=".\assets\shirt.jpg"class="rounded mx-auto d-block">
-            <span class="badge badge-pill badge-info">{{p.id}}</span>
-            <span class="badge badge-pill badge-info">{{p.libb}}</span>
-            <span class="badge badge-pill badge-info">{{p.prix}}</span>
-            <span class="badge badge-pill badge-info">{{statu()}}</span>
-            <span class="badge badge-pill badge-info">{{p.type}}</span>
-            <span class="badge badge-pill badge-info">{{p.taille}}</span>
-            <br>
-            <span class="badge badge-pill badge-info">{{p.datf|date:'yyyy-MM-dd'}}</span>
+        <div class="row" >
+                <ng-container *ngFor="let t of lesprod">
+                <div class="hovereffect col-sm-2 col-xs-6" *ngIf="t._id.charAt(0)=='t'" >
+                    <img class="img-responsive"  [src]="t._imge">
+                    <div class="overlay">
+                       <h2>trousers</h2>
+                       
+                       <span class="badge badge-pill badge-primary">{{t._id}}</span>
+                                <span class="badge badge-pill badge-primary">{{t._libb}}</span>
+                                <span class="badge badge-pill badge-primary">{{t._prix}}DTN</span><br>
+                                <span class="badge badge-pill badge-primary">RM:{{statu(t._remise)}}</span>
+                             
+                                <span class="badge badge-pill badge-primary">{{t.taille}}</span>
+                                <br>
+                                <span class="badge badge-pill badge-primary">{{t._datf|date:'yyyy-MM-dd'}}</span>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+        <br>
+        <div class="row  ">
+                <ng-container *ngFor="let t of lesprod">
+                <div class="hovereffect col-sm-2 col-xs-6" *ngIf="t._id.charAt(0)=='c'" >
+                    <img class="img-responsive"  [src]="t._imge">
+                    <div class="overlay">
+                       <h2>shoes</h2>
+                       
+                       <span class="badge badge-pill badge-primary">{{t._id}}</span>
+                                <span class="badge badge-pill badge-primary">{{t._libb}}</span>
+                                <span class="badge badge-pill badge-primary">{{t._prix}}DTN</span><br>
+                                <span class="badge badge-pill badge-primary">RM:{{statu(t._remise)}}</span>
+                             
+                                <span class="badge badge-pill badge-primary">{{t.taille}}</span>
+                                <br>
+                                <span class="badge badge-pill badge-primary">{{t._datf|date:'yyyy-MM-dd'}}</span>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+           
+        </div>
 
-            </li>
+
+
+     
       
-      </ul>

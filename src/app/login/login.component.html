@@ -1,0 +1,39 @@
+<div *ngIf="verif===false">
+  
+</div>
+
+<div  *ngIf="verif===true"class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+  
+      <!-- Icon -->
+      <div class="fadeIn first">
+        <img src="./assets/login2.png" id="icon" alt="User Icon" />
+      </div>
+  
+      <!-- Login Form -->
+    <div *ngIf="verif===false">
+      <form #frm="ngForm" (ngSumbmit)=" onSubmit(frm)">
+        <input type="text" id="login" class="fadeIn second" name="login" [(ngModel)] ="login"placeholder="login">
+        <input type="password" id="password" class="fadeIn third" name="mdp" [(ngModel)]="mdp"placeholder="password">
+        <input type="submit" class="fadeIn fourth" value="Log In">
+       
+    
+      </form>
+    </div>
+
+
+
+      <!-- Remind Passowrd -->
+      <div id="formFooter">
+        <a class="underlineHover" href="#">Forgot Password?</a>
+      </div>
+  
+
+    </div>
+
+
+
+</div>
+
+

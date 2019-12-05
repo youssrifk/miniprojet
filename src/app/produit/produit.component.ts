@@ -9,29 +9,21 @@ import { Monp } from '../monp';
 })
 export class ProduitComponent implements OnInit {
 lesprod:Monp[];
-src:string;
+
   constructor(private service:ProdService) { }
 
   ngOnInit() {
     this.lesprod = this.service.ntprod;
   }
-statu()
+statu(test:boolean)
 {
  
-  for(let i=0;i<this.lesprod.length;i++)
-  {
-  if (this.lesprod[i].remsie==true)
-  {return "%";}
+  
+  if (test==true)
+  {return "oui";}
   else
-  {return "";}
+  {return "non";}
   }
 }
-image()
-{
-  for(let i=0;i<this.lesprod.length;i++)
-  {
- this.src=this.lesprod[i].imge;
- return this.src;
-  }
-}
-}
+
+
