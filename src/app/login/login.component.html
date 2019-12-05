@@ -1,8 +1,6 @@
-<div *ngIf="verif===false">
-  
-</div>
 
-<div  *ngIf="verif===true"class="wrapper fadeInDown">
+
+<div  *ngIf="verif===false"class="wrapper fadeInDown">
     <div id="formContent">
       <!-- Tabs Titles -->
   
@@ -12,15 +10,15 @@
       </div>
   
       <!-- Login Form -->
-    <div *ngIf="verif===false">
-      <form #frm="ngForm" (ngSumbmit)=" onSubmit(frm)">
+   
+      <form #frm="ngForm" (ngSubmit)=" onSubmit(frm)">
         <input type="text" id="login" class="fadeIn second" name="login" [(ngModel)] ="login"placeholder="login">
-        <input type="password" id="password" class="fadeIn third" name="mdp" [(ngModel)]="mdp"placeholder="password">
+        <input type="password" id="mdp" class="fadeIn third" name="mdp" [(ngModel)]="mdp"placeholder="password">
         <input type="submit" class="fadeIn fourth" value="Log In">
        
     
       </form>
-    </div>
+  
 
 
 
@@ -36,4 +34,7 @@
 
 </div>
 
-
+<div *ngIf="verif===true">
+  <app-acceuil></app-acceuil>
+    <router-outlet></router-outlet>
+</div>

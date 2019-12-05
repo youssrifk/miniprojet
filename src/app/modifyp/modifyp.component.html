@@ -1,6 +1,5 @@
-<form class="container-fluid h1" #frm="ngForm" (ngSubmit)="ajout(frm)">
+<form class="container-fluid ss" #frm="ngForm" (ngSubmit)="modify(frm)">
     <div class="row">
-  
   
       <div class="col-md-3 col-xs-6">
         <label>id</label>
@@ -10,6 +9,7 @@
         </div>
     
       </div>
+ 
   
       <div class="col-md-3 col-xs-6">
         <label>libelle</label>
@@ -23,10 +23,7 @@
   
   
   
-      <div class="col-md-3 col-xs-6">
-        <label>image</label>
-        <input type="file" class="form-control-file"  name="img" (change)="handleUpload($event)" [(ngModel)]="img">
-      </div>
+     
   
   
   

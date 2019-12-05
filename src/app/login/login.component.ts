@@ -22,8 +22,10 @@ verif:boolean=false;
     if((this.login===this.ch) && (this.mdp===this.ch))
     {
       this.verif=true;
-      this.router.navigate(['/accueil']);
+     
     }
+   return this.verif; 
+
 
   }
 

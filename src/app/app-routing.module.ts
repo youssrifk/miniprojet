@@ -12,7 +12,7 @@ const routes: Routes = [
   {path:'ajouter produit',component:AjoutComponent},
   {path:'produit',component:ProduitComponent},
   {path:'view',component:ViewComponent},
-  {path:'', redirectTo:'acceuil', pathMatch:'full'},
+  {path:'', redirectTo:'home', pathMatch:'full'},
 
 ];
 
