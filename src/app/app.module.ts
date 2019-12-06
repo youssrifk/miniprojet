@@ -13,6 +13,7 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { ViewComponent } from './view/view.component';
 import { ModifypComponent } from './modifyp/modifyp.component';
+import { RemiseComponent } from './remise/remise.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { ModifypComponent } from './modifyp/modifyp.component';
     HomeComponent,
     ViewComponent,
     ModifypComponent,
+    RemiseComponent,
     
   ],
   imports: [

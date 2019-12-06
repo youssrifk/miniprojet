@@ -1,0 +1,48 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+.form-group {
+    float: left;
+    width: 100%;
+}
+
+.form-control {
+    padding: 3px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.form-control input,
+.form-control select,
+.form-control textarea {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.form-control textarea {
+    resize: vertical;
+}
+
+#form-group-1 .form-control {
+    width: 33.333%;
+}
+
+#form-group-2 .form-control {
+    width: 50%;
+}
+
+#form-group-3 .form-control {
+    width: 100%;
+}
+
+#form-group-4 .form-control {
+    width: 6em;
+}
+
+@media (max-width: 500px) {
+    #form-group-1 .form-control {
+        width: 50%;
+    }
+    
+    #form-group-2 .form-control {
+        width: 66.6666%;
+    }
+}

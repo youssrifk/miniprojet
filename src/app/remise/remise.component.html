@@ -1,0 +1,35 @@
+<form class="container-fluid" #frm="ngForm" (ngSubmit)="remise(frm)">
+    <div class="row">
+  
+  
+      <div class="col-md-3 col-xs-6">
+        <label>id</label>
+        <input type="text" class="form-control" name="id" placeholder="identificateur"  [(ngModel)]="id" required pattern="[s,t,c][0-9]+" #ide="ngModel">
+        <div *ngIf="ide.errors?.pattern && ide.dirty" class="alert alert-warning">
+       identificateur doit commencer par s,t,c puis
+        </div>
+    
+      </div>
+  
+      <div class="col-md-3 col-xs-6">
+        <label>remise</label>
+        <input type="text" class="form-control"  name="lib" placeholder="remise"  [(ngModel)]="lib" required pattern="nike|adidas|puma" #libelle="ngModel">
+        <div *ngIf="libelle.value>100 && libelle.dirty" class="alert alert-warning">
+          !!!remsie ne depasse pas 100
+             </div>
+           </div>
+       
+    
+  
+  
+  </div>
+     
+     
+      
+     
+      <br>
+      <br>
+    <br>
+    <button type="submit" class="btn btn-primary">OK</button>
+    <button type="reset" class="btn btn-danger">CANCEL</button>
+      </form>
